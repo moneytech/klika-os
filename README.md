@@ -63,7 +63,7 @@ Run following:
 vagrant up
 vagrant ssh
 cd /vagrant
-make all
+make all run
 ```
 
 This will create bootable ISO image and HD image in `images` folder. To run it, you will need qemu on your local machine. You can run it (FROM YOUR LOCAL MACHINE):
@@ -160,7 +160,7 @@ void increment_counter(int add) {
 
 int main() {
 	int layout_y = WINDOW_BAR_HEIGHT + 10;
-	window = window_create(100, 100, 300, 300, "Simple Window", MSG_USER_WIN);
+	window = window_create(100, 100, 300, 300, "Simple Window", MSG_USER_WIN, WINDOW_ATTR_NONE, WINDOW_FRAME_DEFAULT);
 	button_create(window, 10, layout_y, 100, 30, "Click me +", MSG_USER_BTN1);
 	button_create(window, 120, layout_y, 100, 30, "Click me -", MSG_USER_BTN2);
 	label = label_create(window, 10, layout_y + 40, 200, 20, "Number of clicks", MSG_USER_LABEL);
@@ -213,8 +213,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/SamirHodzic"><img src="https://avatars0.githubusercontent.com/u/10077663?v=4" width="100px;" alt="SamirH"/><br /><sub><b>SamirH</b></sub></a><br /><a href="https://github.com/klikaba/klika-os/commits?author=SamirHodzic" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.ensarsarajcic.com"><img src="https://avatars2.githubusercontent.com/u/2764831?v=4" width="100px;" alt="Ensar Sarajčić"/><br /><sub><b>Ensar Sarajčić</b></sub></a><br /><a href="https://github.com/klikaba/klika-os/commits?author=esensar" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SamirHodzic"><img src="https://avatars0.githubusercontent.com/u/10077663?v=4" width="100px;" alt=""/><br /><sub><b>SamirH</b></sub></a><br /><a href="https://github.com/klikaba/klika-os/commits?author=SamirHodzic" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.ensarsarajcic.com"><img src="https://avatars2.githubusercontent.com/u/2764831?v=4" width="100px;" alt=""/><br /><sub><b>Ensar Sarajčić</b></sub></a><br /><a href="https://github.com/klikaba/klika-os/commits?author=esensar" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ahamza1"><img src="https://avatars0.githubusercontent.com/u/17404743?v=4" width="100px;" alt=""/><br /><sub><b>Almir Hamza</b></sub></a><br /><a href="https://github.com/klikaba/klika-os/commits?author=ahamza1" title="Code">💻</a></td>
   </tr>
 </table>
 
